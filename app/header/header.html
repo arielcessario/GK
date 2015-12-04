@@ -1,0 +1,47 @@
+<div id="header-mobile" class="menu-type-mobile">
+    <div class="nav-button"
+         ng-click="appCtrl.menu_mobile_open = !appCtrl.menu_mobile_open;"
+         ng-class="{'nav-button-transformed':appCtrl.menu_mobile_open}">
+        <div ng-class="{'nav-button-top-transformed':appCtrl.menu_mobile_open}"></div>
+        <div ng-class="{'nav-button-mid-transformed':appCtrl.menu_mobile_open}"></div>
+        <div ng-class="{'nav-button-bot-transformed':appCtrl.menu_mobile_open}"></div>
+    </div>
+</div>
+<div id="header-desktop" class="menu-type-desktop">
+    <div id="header-desktop-left">
+        <img src="images/logo.png" class="logo-desktop" alt="">
+    </div>
+
+
+
+    <div id="header-desktop-right">
+        <div class="desktop-link-nav"><a href="" ng-click="appCtrl.goToAnchor('nuestra-empresa')">Home</a></div>
+        <div class="desktop-link-nav"><a href="#/productos">Productos</a></div>
+        <div class="desktop-link-nav"><a href="" ng-click="appCtrl.goToAnchor('contacto-container')">Contacto</a></div>
+    </div>
+
+
+</div>
+
+<div class="menu-mobile-panel" ng-class="{'menu-mobile-panel-show':appCtrl.menu_mobile_open}">
+
+    <div ng-click="appCtrl.menu_mobile_open=false;"
+         ng-class="{'menu-desktop-btn-selected':appCtrl.selectedPage.indexOf(link.nombre) > -1 }"
+         class="menu-desktop-btn"><a href="" ng-click="appCtrl.goToAnchor('nuestra-empresa')">Home</a></div>
+    <div ng-click="appCtrl.menu_mobile_open=false;"
+         ng-class="{'menu-desktop-btn-selected':appCtrl.selectedPage.indexOf(link.nombre) > -1 }"
+         class="menu-desktop-btn"><a href="#/conozcanos">Productos</a></div>
+    <div ng-click="appCtrl.menu_mobile_open=false;"
+         ng-class="{'menu-desktop-btn-selected':appCtrl.selectedPage.indexOf(link.nombre) > -1 }"
+         class="menu-desktop-btn"><a href="" ng-click="appCtrl.goToAnchor('contacto-container')">Contacto</a></div>
+
+    <div id="header-categorias-mobile">
+        <div ng-repeat="categoria in appCtrl.categorias">{{categoria.nombre}}</div>
+    </div>
+
+</div>
+
+
+<div ng-if="" id="header-categorias-panel">
+    <div ng-repeat="categoria in appCtrl.categorias">{{categoria.nombre}}</div>
+</div>
