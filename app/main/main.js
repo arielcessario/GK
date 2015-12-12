@@ -6,10 +6,11 @@
       .controller('MainController', MainController);
 
 
-  MainController.$inject = [];
-  function MainController() {
+  MainController.$inject = ['$location'];
+  function MainController($location) {
 
     var vm = this;
+
 
 
 

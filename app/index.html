@@ -3,11 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mi Primer Sponsor</title>
-    <meta name="description" content="">
+    <title>GK Cepillos Industriales</title>
+    <meta name="description" content="Cepillos industriales GK alquiler de maquinaria industrial">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheets/screen.css">
-    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     <style>
         [ng-cloak] {
             display: none;
@@ -127,10 +126,31 @@
 
     </script>
     <title>GK Cepillos Industriales</title>
+    <!--script para carga de css-->
+    <script>
+        var cb = function () {
+            var l = document.createElement('link');
+            l.rel = 'stylesheet';
+            l.href = 'stylesheets/screen.css';
+            var h = document.getElementsByTagName('head')[0];
+            h.parentNode.insertBefore(l, h);
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+                webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(cb);
+        else window.addEventListener('load', cb);
+    </script>
 </head>
 <body ng-cloak ng-controller="AppController as appCtrl">
 <div ng-include="'header/header.html'"></div>
+<div id="slider">
+    <img src="images/logo.png" class="logo-mobile" alt="">
 
+    <div id="slider-titulo">Usted conoce su negocio</div>
+    <div id="slider-subtitulo">nosotros conocemos de cepillos</div>
+    <button id="slider-button" class="button-white">CONTACTO</button>
+    <div class="white-line"></div>
+</div>
 
 <div ng-view></div>
 
@@ -165,10 +185,6 @@
 
         </div>
     </div>
-
-
-
-
 
 </div>
 
