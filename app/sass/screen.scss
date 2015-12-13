@@ -578,6 +578,7 @@ body, html {
   .productos-section {
     width: 100%;
 
+    max-width: 1000px;
     @media (max-width: 1000px) {
 
     }
@@ -746,6 +747,7 @@ body, html {
       font-size: 24px;
       min-height: 200px;
       width: 100%;
+      margin-top: 25px;
 
     }
   }

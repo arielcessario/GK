@@ -676,18 +676,19 @@ body, html {
 /* line 578, ../sass/screen.scss */
 #productos .productos-section {
   width: 100%;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* line 589, ../sass/screen.scss */
+/* line 590, ../sass/screen.scss */
 #productos .productos-section h1 {
   color: #3e85bb;
   text-align: center;
   font-size: 36px;
   margin: 10px 0 10px 0;
 }
-/* line 596, ../sass/screen.scss */
+/* line 597, ../sass/screen.scss */
 #productos .productos-section .productos-section-list {
   max-width: 1000px;
   min-width: 100%;
@@ -697,19 +698,19 @@ body, html {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-/* line 604, ../sass/screen.scss */
+/* line 605, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto {
   width: 320px;
   height: 320px;
   position: relative;
 }
-/* line 608, ../sass/screen.scss */
+/* line 609, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-main-img {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 614, ../sass/screen.scss */
+/* line 615, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-titulo {
   color: white;
   position: absolute;
@@ -728,7 +729,7 @@ body, html {
   -o-transition: all .5s;
   transition: all .5s;
 }
-/* line 634, ../sass/screen.scss */
+/* line 635, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-recuadro {
   position: absolute;
   width: 90%;
@@ -749,7 +750,7 @@ body, html {
   -o-transition: all .5s;
   transition: all .5s;
 }
-/* line 659, ../sass/screen.scss */
+/* line 660, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-descripcion {
   color: white;
   position: absolute;
@@ -769,14 +770,14 @@ body, html {
   -o-transition: all .5s;
   transition: all .5s;
 }
-/* line 679, ../sass/screen.scss */
+/* line 680, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-descripcion span {
   width: 85%;
   font-size: 16px;
   text-align: center;
   text-shadow: 0 0 3px black;
 }
-/* line 688, ../sass/screen.scss */
+/* line 689, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-botonera {
   width: 100%;
   display: flex;
@@ -786,7 +787,7 @@ body, html {
   align-items: center;
   top: 260px;
 }
-/* line 696, ../sass/screen.scss */
+/* line 697, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-botonera .producto-icon-mail,
 #productos .productos-section .productos-section-list .producto .producto-botonera .producto-icon-face {
   margin: 10px;
@@ -803,7 +804,7 @@ body, html {
   -o-transition: all .5s;
   transition: all .5s;
 }
-/* line 719, ../sass/screen.scss */
+/* line 720, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto:hover .producto-titulo {
   -webkit-transform: translate(0, 100px) !important;
   -moz-transform: translate(0, 100px) !important;
@@ -811,7 +812,7 @@ body, html {
   -o-transform: translate(0, 100px) !important;
   transform: translate(0, 100px) !important;
 }
-/* line 727, ../sass/screen.scss */
+/* line 728, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto:hover .producto-descripcion,
 #productos .productos-section .productos-section-list .producto:hover .producto-recuadro,
 #productos .productos-section .productos-section-list .producto:hover .producto-icon-mail,
@@ -823,7 +824,7 @@ body, html {
   -o-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 743, ../sass/screen.scss */
+/* line 744, ../sass/screen.scss */
 #productos .productos-section .producto-footer {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVhODZiNiIvPjxzdG9wIG9mZnNldD0iNTglIiBzdG9wLWNvbG9yPSIjMDA2MjliIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDA0Yjg4Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background-size: 100%;
@@ -835,4 +836,5 @@ body, html {
   font-size: 24px;
   min-height: 200px;
   width: 100%;
+  margin-top: 25px;
 }
