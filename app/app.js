@@ -175,7 +175,7 @@
 
 
 WebFontConfig = {
-    google: {families: ['Open+Sans:400,700:latin']}
+    google: {families: ['PT+Sans:400,700:latin']}
 };
 (function () {
     var wf = document.createElement('script');
