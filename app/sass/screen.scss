@@ -49,9 +49,10 @@ body, html {
     @include background-image(linear-gradient(left, rgba(90, 134, 182, 1) 0%, rgba(0, 98, 155, 1) 58%, rgba(0, 75, 136, 1) 100%));
     font-size: 24px;
     color: white;
-    padding: 5px 0 5px 15px;
+    padding: 20px 0 20px 20px;
     max-width: 985px;
     width: 100%;
+    border-radius: 4px;
 
   }
 }
@@ -136,6 +137,11 @@ body, html {
   #header-desktop-left {
     justify-content: flex-start;
     margin-top: 50px;
+    img{
+      margin-top: 80px;
+
+
+    }
   }
   #header-desktop-right {
     justify-content: flex-end;
@@ -393,6 +399,9 @@ body, html {
       height: 240px;
       width: 240px;
       margin: 10px 0 10px 0;
+      -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.34);
+      -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.34);
+      box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.34);
       img {
         position: absolute;
         width: 100%;
@@ -421,7 +430,9 @@ body, html {
 #nuestra-empresa {
 
   p {
-    font-weight: 700;
+    font-family: "PT Sans Narrow";
+    font-size: 18px;
+    font-weight: 400;
     width: calc(100% - 20px);
     max-width: calc(100% - 20px);
     padding: 10px 10px 10px 10px;
@@ -429,6 +440,9 @@ body, html {
       max-width: 1000px;
       margin-left: calc(50% - 500px);
       padding: 10px 0 10px 0;
+      line-height: 22px;
+      margin-top: 20px;
+
     }
 
   }
@@ -443,6 +457,8 @@ body, html {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 
   @media(min-width: 1000px) {
     align-items: flex-start;
@@ -591,7 +607,7 @@ body, html {
       color: rgb(62, 133, 187);
       text-align: center;
       font-size: 36px;
-      margin: 10px 0 10px 0;
+      margin: 50px 0 50px 0px;
     }
 
     .productos-section-list {
@@ -603,9 +619,14 @@ body, html {
       justify-content: space-around;
       flex-wrap: wrap;
       .producto {
+        margin-bottom: 10px;
         width: 320px;
         height: 320px;
         position: relative;
+        -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.34);
+        -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.34);
+        box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.34);
+
         .producto-main-img {
           position: absolute;
           top: 0;
@@ -615,16 +636,18 @@ body, html {
         .producto-titulo {
           color: white;
           position: absolute;
-          width: 100%;
-          font-size: 32px;
+          width: 95%;
+          font-size: 30px;
           text-align: center;
-          text-shadow: 0 0 1px black;
-          -webkit-transform: translate(0, 144px);
-          -moz-transform: translate(0, 144px);
-          -ms-transform: translate(0, 144px);
-          -o-transform: translate(0, 144px);
-          transform: translate(0, 144px);
+          margin: 10px;
 
+
+          -webkit-transform: translate(0, 120px);
+          -moz-transform: translate(0, 120px);
+          -ms-transform: translate(0, 120px);
+          -o-transform: translate(0, 120px);
+          transform: translate(0, 120px);
+          text-shadow: 4px 2px 1px rgba(0, 0, 0, 1);
           -webkit-transition: all .5s;
           -moz-transition: all .5s;
           -ms-transition: all .5s;
@@ -634,12 +657,16 @@ body, html {
         }
         .producto-recuadro {
           position: absolute;
-          width: 90%;
-          height: 90%;
-          left: 5%;
-          top: 5%;
+          width: 95%;
+          height: 95%;
+          left: 2%;
+          top: 2%;
+          margin: 2px;
           border: 2px solid white;
-          background-color: rgba(0,0,0,0.6);
+          background-color: rgba(0, 75, 136,0.8);
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
 
 
 
@@ -663,7 +690,7 @@ body, html {
           display: flex;
           flex-direction: column;
           align-items: center;
-          top: 140px;
+          top: 125px;
 
           opacity: 0;
           -webkit-transform: scale(0,0);
@@ -717,12 +744,17 @@ body, html {
       }
 
       .producto:hover {
+        -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.97);
+        -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.97);
+        box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.97);
         .producto-titulo {
-          -webkit-transform: translate(0, 100px) !important;
-          -moz-transform: translate(0, 100px) !important;
-          -ms-transform: translate(0, 100px) !important;
-          -o-transform: translate(0, 100px) !important;
-          transform: translate(0, 100px) !important;
+
+          -webkit-transform: translate(0, 50px) !important;
+          -moz-transform: translate(0, 50px) !important;
+          -ms-transform: translate(0, 50px) !important;
+          -o-transform: translate(0, 50px) !important;
+          transform: translate(0, 50px) !important;
+
         }
 
         .producto-descripcion,
@@ -744,11 +776,41 @@ body, html {
     .producto-footer {
       @include background-image(linear-gradient(top, rgba(90, 134, 182, 1) 0%, rgba(0, 98, 155, 1) 58%, rgba(0, 75, 136, 1) 100%));
       color: white;
-      font-size: 24px;
-      min-height: 200px;
+      font-family: "PT Sans Narrow";
+      font-weight: 200;
+      font-size: 30px;
+      line-height: 34px;
+      min-height: 50px;
       width: 100%;
       margin-top: 25px;
+      padding: 20px;
+      -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.34);
+      -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.34);
+      box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.34);
+      border-radius: 4px;
 
     }
   }
 }
+
+
+
+
+    .producto-footer {
+      @include background-image(linear-gradient(top, rgba(90, 134, 182, 1) 0%, rgba(0, 98, 155, 1) 58%, rgba(0, 75, 136, 1) 100%));
+      color: white;
+      font-family: "PT Sans Narrow";
+      font-weight: 200;
+      font-size: 30px;
+      line-height: 34px;
+      min-height: 50px;
+      width: 100%;
+      margin-top: 25px;
+      padding: 20px;
+
+    }
+
+
+
+
+
