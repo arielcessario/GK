@@ -759,14 +759,19 @@ body, html {
   -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.34);
   -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.34);
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.34);
+  -webkit-transition: box-shadow .4s ease;
+  -moz-transition: box-shadow .4s ease;
+  -ms-transition: box-shadow .4s ease;
+  -o-transition: box-shadow .4s ease;
+  transition: box-shadow .4s ease;
 }
-/* line 662, ../sass/screen.scss */
+/* line 668, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-main-img {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 668, ../sass/screen.scss */
+/* line 674, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-titulo {
   color: white;
   position: absolute;
@@ -786,7 +791,7 @@ body, html {
   -o-transition: all .5s;
   transition: all .5s;
 }
-/* line 689, ../sass/screen.scss */
+/* line 695, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-recuadro {
   position: absolute;
   width: 95%;
@@ -811,7 +816,7 @@ body, html {
   -o-transition: all .5s;
   transition: all .5s;
 }
-/* line 716, ../sass/screen.scss */
+/* line 722, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-descripcion {
   color: white;
   position: absolute;
@@ -831,14 +836,14 @@ body, html {
   -o-transition: all .5s;
   transition: all .5s;
 }
-/* line 736, ../sass/screen.scss */
+/* line 742, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-descripcion span {
   width: 85%;
   font-size: 16px;
   text-align: center;
   text-shadow: 0 0 3px black;
 }
-/* line 745, ../sass/screen.scss */
+/* line 751, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-botonera {
   width: 100%;
   display: flex;
@@ -848,7 +853,7 @@ body, html {
   align-items: center;
   top: 260px;
 }
-/* line 753, ../sass/screen.scss */
+/* line 759, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-botonera .producto-icon-mail,
 #productos .productos-section .productos-section-list .producto .producto-botonera .producto-icon-face {
   margin: 10px;
@@ -865,13 +870,13 @@ body, html {
   -o-transition: all .5s;
   transition: all .5s;
 }
-/* line 775, ../sass/screen.scss */
+/* line 781, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto:hover {
-  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.97);
-  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.97);
-  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.97);
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.97);
+  -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.97);
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.97);
 }
-/* line 779, ../sass/screen.scss */
+/* line 785, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto:hover .producto-titulo {
   -webkit-transform: translate(0, 50px) !important;
   -moz-transform: translate(0, 50px) !important;
@@ -879,7 +884,7 @@ body, html {
   -o-transform: translate(0, 50px) !important;
   transform: translate(0, 50px) !important;
 }
-/* line 789, ../sass/screen.scss */
+/* line 795, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto:hover .producto-descripcion,
 #productos .productos-section .productos-section-list .producto:hover .producto-recuadro,
 #productos .productos-section .productos-section-list .producto:hover .producto-icon-mail,
@@ -891,7 +896,7 @@ body, html {
   -o-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 804, ../sass/screen.scss */
+/* line 810, ../sass/screen.scss */
 #productos .productos-section .producto-footer {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVhODZiNiIvPjxzdG9wIG9mZnNldD0iNTglIiBzdG9wLWNvbG9yPSIjMDA2MjliIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDA0Yjg4Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background-size: 100%;
@@ -913,7 +918,7 @@ body, html {
   border-radius: 4px;
 }
 
-/* line 827, ../sass/screen.scss */
+/* line 833, ../sass/screen.scss */
 .producto-footer {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVhODZiNiIvPjxzdG9wIG9mZnNldD0iNTglIiBzdG9wLWNvbG9yPSIjMDA2MjliIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDA0Yjg4Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background-size: 100%;
