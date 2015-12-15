@@ -81,6 +81,21 @@ body, html {
   color: rgba(white, 0.6);
 }
 
+.error-input {
+  border-color: red !important;
+}
+
+.error-message {
+  position: absolute;
+  font-weight: 700;
+  color: red;
+}
+
+#ac-mensaje-custom {
+  display: none !important;
+  visibility: collapse !important;
+}
+
 // HEADER
 
 #header-mobile {
@@ -506,16 +521,6 @@ body, html {
       font-size: 18px !important;
     }
 
-
-    .error-input{
-      border-color: red;
-    }
-
-    .error-message{
-      display: none;
-      visibility: collapse;
-    }
-
     input, textarea {
       background-color: rgb(62, 133, 189);
       width: calc(100% - 40px);
@@ -832,7 +837,7 @@ body, html {
       box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.34);
       border-radius: 4px;
 
-      @media(min-width: 1000px){
+      @media(min-width: 1000px) {
         //font-size: 2vw;
 
       }
