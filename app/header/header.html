@@ -9,14 +9,13 @@
 </div>
 <div id="header-desktop" class="menu-type-desktop">
     <div id="header-desktop-left">
-        <img src="images/logo.png" class="logo-desktop" alt="">
+        <img  ng-click="appCtrl.goToAnchor('nuestra-empresa')" ng-class="{'logo-desktop-reducido':appCtrl.scroll != 0}" src="images/logo.png" class="logo-desktop" alt="">
     </div>
-
 
 
     <div id="header-desktop-right">
         <div class="desktop-link-nav"><a href="" ng-click="appCtrl.goToAnchor('nuestra-empresa')">Home</a></div>
-        <div class="desktop-link-nav"><a href="#/productos">Productos</a></div>
+        <div class="desktop-link-nav"><a href="" ng-click="appCtrl.goToProductos()">Productos</a></div>
         <div class="desktop-link-nav"><a href="" ng-click="appCtrl.goToAnchor('contacto-container')">Contacto</a></div>
     </div>
 

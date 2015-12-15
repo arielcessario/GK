@@ -144,7 +144,7 @@
 <body ng-cloak ng-controller="AppController as appCtrl">
 <div ng-include="'header/header.html'"></div>
 <div id="slider">
-    <img src="images/logo.png" class="logo-mobile" alt="">
+    <img src="images/logo.png" class="logo-mobile" alt="" height="150">
 
     <div id="slider-titulo">Usted conoce su negocio</div>
     <div id="slider-subtitulo">nosotros conocemos de cepillos</div>
@@ -160,23 +160,33 @@
         <h1>CONTACTO</h1>
     </div>
 
-    <div id="contacto-form">
+    <div id="contacto-form" form-id="contacto-container">
         <div class="contacto-panel">
-            <input ng-model="contactoCtrl.nombre" type="text" id="contacto-nombre" placeholder="Nombre y Apellido:">
-            <input ng-model="contactoCtrl.email" type="text" id="contacto-mail" placeholder="Mail:">
-            <input ng-model="contactoCtrl.asunto" type="text" id="contacto-asunto" placeholder="Asunto:">
-            <textarea class="textoareaconsulta" ng-model="contactoCtrl.mensaje" name="" id="contacto-consulta"
-                      rows="10"  placeholder="Consulta:"></textarea>
+            <input ac-validator
+                   is-required="Ingrese el nombre"
+                   ng-model="appCtrl.nombre" type="text" id="contacto-nombre" placeholder="Nombre y Apellido:">
+            <input ac-validator
+                   is-required="Ingrese un mail de contacto"
+                   ng-model="appCtrl.email" type="text" id="contacto-mail" placeholder="Mail:">
+            <input ac-validator
+                   is-required="Ingresar un asunto"
+                   ng-model="appCtrl.asunto" type="text" id="contacto-asunto" placeholder="Asunto:">
+            <textarea
+                    ac-validator
+                    is-required="Ingrese un mensaje"
+                    class="textoareaconsulta" ng-model="appCtrl.mensaje" name="" id="contacto-consulta"
+                    rows="10" placeholder="Consulta:"></textarea>
 
 
-                <button id="contacto-enviar" class="button-white" ng-click="contactoCtrl.sendMail();">Enviar</button>
+            <button ac-validator id="contacto-enviar" class="button-white" ng-click="appCtrl.sendMail();">Enviar</button>
 
         </div>
         <div class="contacto-panel">
 
             <div class="contacto-datos"><span>Mail:</span> <span>gkcepillos@hotmail.com</span></div>
             <div class="contacto-datos"><span>Teléfonos:</span> <span>4203-5039/8454 4205-5108</span></div>
-            <div class="contacto-datos"><span>Dirección:</span> <span>Luis Maria Campos 2654, sarandí. Avellaneda</span></div>
+            <div class="contacto-datos"><span>Dirección:</span> <span>Luis Maria Campos 2654, sarandí. Avellaneda</span>
+            </div>
 
 
             <iframe id="contacto-map"
@@ -196,11 +206,11 @@
     <div id="footer-logo">
         <img src="images/logo.png" alt="">
     </div>
-    
-    <div id="footer-links">
-        <div ng-click="appCtrl.goToAnchor('nuestra-empresa')" >HOME</div>
 
-        <div>PRODUCTOS</div>
+    <div id="footer-links">
+        <div ng-click="appCtrl.goToAnchor('nuestra-empresa')">HOME</div>
+
+        <div ng-click="appCtrl.goToProductos();">PRODUCTOS</div>
 
         <div ng-click="appCtrl.goToAnchor('contacto-container')">CONTACTO</div>
     </div>

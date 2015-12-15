@@ -15,7 +15,7 @@ background: @include background-image(linear-gradient(top, rgba(90,134,182,1) 0%
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .white-line {
@@ -130,6 +130,7 @@ body, html {
     flex-direction: row;
     align-items: center;
     @media (min-width: 1300px) {
+      max-height: 10px;
       max-width: 650px;
     }
   }
@@ -139,8 +140,28 @@ body, html {
     margin-top: 50px;
     img{
       margin-top: 80px;
+    }
+    
+    .logo-desktop{
+      height: 150px;
+      -webkit-transform-origin: 0% 0%;
+      -moz-transform-origin: 0% 0%;
+      -ms-transform-origin: 0% 0%;
+      -o-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
 
-
+      -webkit-transition: transform 0.3s ease;
+      -moz-transition: transform 0.3s ease;
+      -ms-transition: transform 0.3s ease;
+      -o-transition: transform 0.3s ease;
+      transition: transform 0.3s ease;
+    }
+    .logo-desktop-reducido{
+      -webkit-transform: scale(0.5, 0.5);
+      -moz-transform: scale(0.5, 0.5);
+      -ms-transform: scale(0.5, 0.5);
+      -o-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
     }
   }
   #header-desktop-right {
@@ -157,9 +178,9 @@ body, html {
     margin: 5px 15px 5px 15px;
     a {
       color: #3e85bb;
-      font-family: "PT Sans Narrow" ;
+      font-family: "Open Sans", sans-serif ;
       font-weight: bold;
-      font-size: 20;
+      font-size: 20px;
       text-decoration: none;
 
 
@@ -367,7 +388,6 @@ body, html {
 
     font-size: 50px;
     margin-bottom: 10px;
-    font-family: "PT Sans";
     font-weight: bolder;
   }
 
@@ -377,6 +397,7 @@ body, html {
 
   #slider-button {
 
+    margin-top: 25px !important;
   }
 }
 
@@ -437,7 +458,6 @@ body, html {
 #nuestra-empresa {
 
   p {
-    font-family: "PT Sans Narrow";
     font-size: 18px;
     font-weight: 400;
     width: calc(100% - 20px);
@@ -783,7 +803,6 @@ body, html {
     .producto-footer {
       @include background-image(linear-gradient(top, rgba(90, 134, 182, 1) 0%, rgba(0, 98, 155, 1) 58%, rgba(0, 75, 136, 1) 100%));
       color: white;
-      font-family: "PT Sans Narrow";
       font-weight: 200;
       font-size: 30px;
       line-height: 34px;
@@ -806,7 +825,6 @@ body, html {
     .producto-footer {
       @include background-image(linear-gradient(top, rgba(90, 134, 182, 1) 0%, rgba(0, 98, 155, 1) 58%, rgba(0, 75, 136, 1) 100%));
       color: white;
-      font-family: "PT Sans Narrow";
       font-weight: 200;
       font-size: 30px;
       line-height: 34px;
