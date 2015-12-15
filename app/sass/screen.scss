@@ -805,10 +805,9 @@ body, html {
       @include background-image(linear-gradient(top, rgba(90, 134, 182, 1) 0%, rgba(0, 98, 155, 1) 58%, rgba(0, 75, 136, 1) 100%));
       color: white;
       font-weight: 200;
-      font-size: 8vw;
       line-height: 34px;
+      font-size: 28px;
       min-height: 50px;
-      max-width: calc(100% - 20px);
       width: calc(100% - 20px);
       margin-top: 25px;
       padding: 10px;
@@ -817,6 +816,10 @@ body, html {
       box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.34);
       border-radius: 4px;
 
+      @media(min-width: 1000px){
+        //font-size: 2vw;
+
+      }
     }
   }
 }
