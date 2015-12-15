@@ -156,7 +156,12 @@ body, html {
   .desktop-link-nav {
     margin: 5px 15px 5px 15px;
     a {
-      color: rgb(0, 161, 82);
+      color: #3e85bb;
+      font-family: "PT Sans Narrow" ;
+      font-weight: bold;
+      font-size: 20;
+      text-decoration: none;
+
 
     }
   }
@@ -360,8 +365,10 @@ body, html {
 
   #slider-titulo {
 
-    font-size: 32px;
+    font-size: 50px;
     margin-bottom: 10px;
+    font-family: "PT Sans";
+    font-weight: bolder;
   }
 
   #slider-subtitulo {
