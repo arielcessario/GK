@@ -126,6 +126,19 @@
     </script>
     <title>GK Cepillos Industriales</title>
     <!--script para carga de css-->
+    <script>
+        var cb = function () {
+            var l = document.createElement('link');
+            l.rel = 'stylesheet';
+            l.href = 'stylesheets/screen.min.css';
+            var h = document.getElementsByTagName('head')[0];
+            h.parentNode.insertBefore(l, h);
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+                webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(cb);
+        else window.addEventListener('load', cb);
+    </script>
 
 </head>
 <body ng-cloak ng-controller="AppController as appCtrl">
@@ -136,7 +149,8 @@
     <div id="slider-titulo">Usted conoce su negocio</div>
     <div id="slider-subtitulo">nosotros conocemos de cepillos</div>
     <button ng-click="appCtrl.goToAnchor('contacto-container')"
-            id="slider-button" class="button-white">CONTACTO</button>
+            id="slider-button" class="button-white">CONTACTO
+    </button>
     <div class="white-line"></div>
 </div>
 
