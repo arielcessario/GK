@@ -20,7 +20,7 @@
                     resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
                         loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                             // you can lazy load files for an existing module
-                            return $ocLazyLoad.load('main/main.js');
+                            return $ocLazyLoad.load('main/main.min.js');
                         }]
                     }
                 });
@@ -31,7 +31,7 @@
                     resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
                         loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                             // you can lazy load files for an existing module
-                            return $ocLazyLoad.load('productos/productos.js');
+                            return $ocLazyLoad.load('productos/productos.min.js');
                         }]
                     }
                 });
@@ -177,7 +177,7 @@
     var cb = function () {
         var l = document.createElement('link');
         l.rel = 'stylesheet';
-        l.href = 'stylesheets/screen.css';
+        l.href = 'stylesheets/screen.min.css';
         var h = document.getElementsByTagName('head')[0];
         h.parentNode.insertBefore(l, h);
     };
