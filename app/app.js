@@ -80,7 +80,7 @@
                 //Note: Use this in a directive, not with document.getElementById
                 var someElement = angular.element(document.getElementById('productos'));
                 $document.scrollToElement(someElement, offset, duration);
-            }, 10);
+            }, 20);
         }
 
 
@@ -99,7 +99,7 @@
                 //Note: Use this in a directive, not with document.getElementById
                 var someElement = angular.element(document.getElementById(id));
                 $document.scrollToElement(someElement, offset, duration);
-            }, 10);
+            }, 20);
 
 
         }
@@ -159,7 +159,7 @@
                         //Note: Use this in a directive, not with document.getElementById
                         var someElement = angular.element(document.getElementById('contacto-container'));
                         $document.scrollToElement(someElement, offset, duration);
-                    }, 10);
+                    }, 20);
                 });
 
 
