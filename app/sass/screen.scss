@@ -506,10 +506,20 @@ body, html {
       font-size: 18px !important;
     }
 
+
+    .error-input{
+      border-color: red;
+    }
+
+    .error-message{
+      display: none;
+      visibility: collapse;
+    }
+
     input, textarea {
       background-color: rgb(62, 133, 189);
       width: calc(100% - 40px);
-      border: 0px solid;
+      border: 2px rgb(62, 133, 189) solid;
       margin: 10px;
       padding: 5px;
       -webkit-box-shadow: 2px 2px 6px rgb(150, 150, 150);
