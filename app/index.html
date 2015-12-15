@@ -110,12 +110,12 @@
                         'bower_components/angular-cookies/angular-cookies.min.js',
                         'bower_components/angular-animate/angular-animate.min.js',
                         'bower_components/angular-scroll/angular-scroll.js',
-                        'bower_components/ac-angular-utils/ac-utils.min.js'
+                        'bower_components/ac-angular-utils/ac-utils.js'
                     ], 'segundo');
 
 
                     $script.ready('segundo', function () {
-                        $script(['app.min.js'], 'tercero');
+                        $script(['app.js'], 'tercero');
 
                         $script.ready('tercero', function () {
                             angular.bootstrap(document, ['gk']);
