@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -241,11 +241,11 @@ body, html {
 }
 /* line 156, ../sass/screen.scss */
 #header-desktop #header-desktop-left img {
-  margin-top: 80px;
+  margin-top: 140px;
 }
 /* line 160, ../sass/screen.scss */
 #header-desktop #header-desktop-left .logo-desktop {
-  height: 150px;
+  height: 220px;
   -webkit-transform-origin: 0% 0%;
   -moz-transform-origin: 0% 0%;
   -ms-transform-origin: 0% 0%;
@@ -790,11 +790,11 @@ body, html {
   left: 0;
 }
 /* line 689, ../sass/screen.scss */
-#productos .productos-section .productos-section-list .producto .producto-titulo {
+#productos .productos-section .productos-section-list .producto .producto-titulo, #productos .productos-section .productos-section-list .producto .producto-titulo2 {
   color: white;
   position: absolute;
   width: 95%;
-  font-size: 30px;
+  font-size: 45px;
   text-align: center;
   margin: 10px;
   -webkit-transform: translate(0, 120px);
@@ -810,6 +810,10 @@ body, html {
   transition: all .5s;
 }
 /* line 710, ../sass/screen.scss */
+#productos .productos-section .productos-section-list .producto .producto-titulo2 {
+  font-size: 22px !important;
+}
+/* line 713, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-recuadro {
   position: absolute;
   width: 95%;
@@ -834,14 +838,16 @@ body, html {
   -o-transition: all .5s;
   transition: all .5s;
 }
-/* line 737, ../sass/screen.scss */
+/* line 740, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-descripcion {
   color: white;
   position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 125px;
+  top: 100px;
+  line-height: 18px;
+  margin-top: 10px;
   opacity: 0;
   -webkit-transform: scale(0, 0);
   -moz-transform: scale(0, 0);
@@ -854,14 +860,14 @@ body, html {
   -o-transition: all .5s;
   transition: all .5s;
 }
-/* line 757, ../sass/screen.scss */
+/* line 761, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-descripcion span {
   width: 85%;
   font-size: 16px;
   text-align: center;
   text-shadow: 0 0 3px black;
 }
-/* line 766, ../sass/screen.scss */
+/* line 770, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-botonera {
   width: 100%;
   display: flex;
@@ -871,7 +877,7 @@ body, html {
   align-items: center;
   top: 260px;
 }
-/* line 774, ../sass/screen.scss */
+/* line 778, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto .producto-botonera .producto-icon-mail,
 #productos .productos-section .productos-section-list .producto .producto-botonera .producto-icon-face {
   margin: 10px;
@@ -888,21 +894,27 @@ body, html {
   -o-transition: all .5s;
   transition: all .5s;
 }
-/* line 796, ../sass/screen.scss */
+/* line 800, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto:hover {
   -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.97);
   -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.97);
   box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.97);
 }
-/* line 800, ../sass/screen.scss */
-#productos .productos-section .productos-section-list .producto:hover .producto-titulo {
+/* line 804, ../sass/screen.scss */
+#productos .productos-section .productos-section-list .producto:hover .producto-titulo, #productos .productos-section .productos-section-list .producto:hover .producto-titulo2 {
+  font-size: 25px;
   -webkit-transform: translate(0, 50px) !important;
   -moz-transform: translate(0, 50px) !important;
   -ms-transform: translate(0, 50px) !important;
   -o-transform: translate(0, 50px) !important;
   transform: translate(0, 50px) !important;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -ms-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
 }
-/* line 810, ../sass/screen.scss */
+/* line 818, ../sass/screen.scss */
 #productos .productos-section .productos-section-list .producto:hover .producto-descripcion,
 #productos .productos-section .productos-section-list .producto:hover .producto-recuadro,
 #productos .productos-section .productos-section-list .producto:hover .producto-icon-mail,
@@ -914,7 +926,7 @@ body, html {
   -o-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 825, ../sass/screen.scss */
+/* line 832, ../sass/screen.scss */
 #productos .productos-section .producto-footer {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVhODZiNiIvPjxzdG9wIG9mZnNldD0iNTglIiBzdG9wLWNvbG9yPSIjMDA2MjliIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDA0Yjg4Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background-size: 100%;
@@ -923,20 +935,20 @@ body, html {
   background-image: -webkit-linear-gradient(top, #5a86b6 0%, #00629b 58%, #004b88 100%);
   background-image: linear-gradient(to bottom, #5a86b6 0%, #00629b 58%, #004b88 100%);
   color: white;
-  font-weight: 200;
+  font-weight: lighter;
   line-height: 34px;
-  font-size: 28px;
+  font-size: 22px;
   min-height: 50px;
   width: calc(100% - 20px);
   margin-top: 25px;
-  padding: 10px;
+  padding: 30px;
   -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.34);
   -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.34);
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.34);
   border-radius: 4px;
 }
 
-/* line 848, ../sass/screen.scss */
+/* line 855, ../sass/screen.scss */
 .producto-footer {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVhODZiNiIvPjxzdG9wIG9mZnNldD0iNTglIiBzdG9wLWNvbG9yPSIjMDA2MjliIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDA0Yjg4Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background-size: 100%;

@@ -162,8 +162,8 @@
         <h1>CONTACTO</h1>
     </div>
 
-    <div id="contacto-form" form-id="contacto-container">
-        <div class="contacto-panel">
+    <div id="contacto-form" form-id="contacto-container" >
+        <div class="contacto-panel" ng-if="appCtrl.validate">
             <input ac-validator
                    is-required="Ingrese el nombre"
                    ng-model="appCtrl.nombre" type="text" id="contacto-nombre" placeholder="Nombre y Apellido:">
